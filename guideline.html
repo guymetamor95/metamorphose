@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metamorphose - GUY</title>
+  <link rel="stylesheet" href="metamorphose_style.css">
+  <!-- フォント・アイコン用 CDN -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* シンプルで清潔感のあるデザイン設定 */
         .guideline-container {
@@ -70,7 +77,27 @@
 </head>
 <body>
 
-<div class="guideline-container">
+  <!-- ヘッダー / ナビゲーション -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Metamorphose</span>
+        <span class="logo-sub">GUY / 中平凱 Official Site</span>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" >TOP</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+          <li><a href="dojin.html">DOJIN</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="guideline.html"class="active">GUIDELINE</a></li>
+          <li><a href="mail.html">MAIL</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ <div class="guideline-container">
     <h1>【めたもるふぉーぜ(Metamorphose)】<br>イラスト/漫画 利用ガイドライン</h1>
     
     <p>いつも作品をご覧いただきありがとうございます！<br>
@@ -126,7 +153,12 @@
     </div>
 
     <p class="last-update">最終更新日：2026/04/21</p>
-</div>
+ </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; Metamorphose / GUY &amp; 中平凱 All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
