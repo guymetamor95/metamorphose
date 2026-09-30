@@ -1422,3 +1422,19 @@ details[open] .icon-arrow {
   border-radius: 8px;
   border: 1px solid #2e3548;
 }
+
+/* スマホタップ時の金色・青色等のハイライト枠線を消去 */
+.book-card-mini,
+.modal-trigger,
+.modal-nav-btn,
+.modal-close-btn,
+.book-modal button {
+  -webkit-tap-highlight-color: transparent; /* スマホのタップハイライトを透明化 */
+  outline: none;                            /* フォーカス枠線を消去 */
+}
+
+/* モーダル表示時のフォーカス枠線を無効化 */
+.book-modal:focus,
+.modal-content:focus {
+  outline: none;
+}
