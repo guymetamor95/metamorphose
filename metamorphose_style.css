@@ -87,7 +87,7 @@ a {
   /* 文字を読みやすくするため、イラストの上に薄い暗い膜（グラデーション）を重ねています */
   background: 
     linear-gradient(rgba(18, 19, 22, 0.75), rgba(18, 19, 22, 0.9)),
-    url('img/title14.jpg') center/cover no-repeat;
+    url('img/title14_2.jpg') center/cover no-repeat;
   
   /* 枠線とシャドウ */
   border-bottom: 1px solid var(--border-color);
