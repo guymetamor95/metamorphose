@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metamorphose - GUY</title>
-  <link rel="stylesheet" href="metamorphose_style.css">
-  <!-- フォント・アイコン用 CDN -->
+  <title>DOJIN - Metamorphose</title>
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="metamorphose_style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
@@ -14,7 +13,7 @@
 </head>
 <body>
 
-  <!-- ヘッダー / ナビゲーション -->
+  <!-- ヘッダー -->
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
@@ -23,9 +22,9 @@
       </a>
       <nav class="nav">
         <ul>
-          <li><a href="index.html" class="active">TOP</a></li>
+          <li><a href="index.html">TOP</a></li>
           <li><a href="profile.html">PROFILE</a></li>
-          <li><a href="dojin.html">DOJIN</a></li>
+          <li><a href="dojin.html" class="active">DOJIN</a></li>
           <li><a href="https://metamorphose.amigasa.jp/gallery.html">GALLERY</a></li>
           <li><a href="guideline.html">GUIDELINE</a></li>
           <li><a href="mail.html">MAIL</a></li>
@@ -34,117 +33,1117 @@
     </div>
   </header>
 
-  <!-- メインビジュアル -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Metamorphose</h1>
-      <p>GUY / 中平凱 のイラスト・同人活動Webサイトです。</p>
-      
-      <!-- 主要リンク・SNSリンクボタン群 -->
-      <div class="social-links">
-        <a href="https://pixiv.me/guy-n" target="_blank" class="btn btn-pixiv"><i class="fa-solid fa-p"></i> pixiv</a>
-        <a href="https://metamorphose.fanbox.cc/" target="_blank" class="btn btn-fanbox"><i class="fa-solid fa-box"></i> FANBOX</a>
-        <a href="https://metamorphose.booth.pm/" target="_blank" class="btn btn-booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
-        <a href="https://skeb.jp/@guy_n" target="_blank" class="btn btn-skeb"><i class="fa-solid fa-pen-nib"></i> Skeb</a>
-        <a href="https://twitter.com/guy_n/" target="_blank" class="btn btn-sns"><i class="fa-brands fa-x-twitter"></i> X</a>
-        <a href="https://misskey.io/@guy_kiji" target="_blank" class="btn btn-sns"><i class="fa-solid fa-rocket"></i> Misskey</a>
-        <a href="https://bsky.app/profile/guy1995.bsky.social" target="_blank" class="btn btn-sns"><i class="fa-solid fa-cloud"></i> Bluesky</a>
-      </div>
-    </div>
+  <!-- ページヘッダー -->
+  <section class="page-header">
+    <h1>DOJIN INFORMATION</h1>
+    <p>同人誌・頒布物・イベント参加情報</p>
   </section>
 
-<!-- メインコンテンツ -->
   <main class="container">
 
-    <!-- 最新更新ピックアップバナー（画像を大きく見せるエリア） -->
+<!-- イベント参加情報 -->
     <section class="section">
-      <h2 class="section-title">LATEST UPDATE</h2>
-      <div class="pickup-card">
-        <a href="dojin.html" class="pickup-link">
-          <div class="pickup-image">
-            <!-- 更新内容のサムネイル画像（例: img/top_banner.jpg 等） -->
-            <img src="img/burusuku_10.jpg" alt="最新更新イメージ">
-            <span class="badge-new">NEW</span>
-          </div>
-          <div class="pickup-content">
-            <span class="pickup-date">2026.10.1 UPDATE</span>
-            <h3 class="pickup-title">新刊・最新同人誌情報、更新！</h3>
-            <p class="pickup-text">最新の同人誌情報を更新しました。新刊情報の詳細やバックナンバーは こちらからご覧いただけます。</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- オリジナル作品【東京サキュバス】『JCjoushi』特設バナー -->
-    <section class="section">
-      <h2 class="section-title">ORIGINAL WORKS</h2>
-      <div class="special-banner-card">
-        <a href="https://t.co/EpjPZDbdxx" target="_blank" class="special-banner-link">
-          <div class="special-banner-image">
-            <img src="img/tokyo succubus_banner.jpg" alt="JCjoushi">
-          </div>
-          <div class="special-banner-content">
-            <div class="special-badge">ADULT COMICS</div>
-            <h3>東京サキュバス (Tokyo Succubus)</h3>
-            <p>『東京サキュバス』特設Webサイトはこちらから！</p>
-            <span class="btn-visit">SITE VISIT <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-      </div>
-
-      <div class="special-banner-card">
-        <a href="https://guymetamor95.github.io/JCjoushi/" target="_blank" class="special-banner-link">
-          <div class="special-banner-image">
-            <!-- JCjoushiのサムネイル画像があれば指定（なければ仮の画像でOK） -->
-            <img src="img/JC‗001_Event_01.jpg" alt="JCjoushi">
-          </div>
-          <div class="special-banner-content">
-            <div class="special-badge">VISUAL NOVEL GAME</div>
-            <h3>JC上司 (JCjoushi)</h3>
-            <p>『JC上司』特設Webサイトはこちらから！</p>
-            <span class="btn-visit">SITE VISIT <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-      </div>
+      <h2 class="section-title">EVENT</h2>
+      <div class="event-card">
+        <div class="event-badge">NEXT EVENT</div>
+        <h3 class="event-name">コミックマーケット 109</h3>
+        <ul class="event-details">
+          <li><i class="fa-regular fa-calendar"></i> 2026年12月31日(火)</li>
+          <li><i class="fa-solid fa-location-dot"></i> 東京ビッグサイト</li>
+          <li><i class="fa-solid fa-tag"></i> サークル名：Metamorphose</li>
+        </ul>
+        <p class="event-memo">新刊イラスト集と各種グッズを頒布予定です。お品書きは決定次第X（旧Twitter）および当サイトにてお知らせします。</p>
+        
+        <!-- ★ここに画像を追加 -->
+        <!--
+        <div class="event-image">
+          <img " alt="コミックマーケット109 お品書き">
+        </div>
+      </div>-->
     </section>
     
-
-  </main>
-    
-    <!-- 更新情報 (Information) -->
+    <!-- 新刊情報 (NEW RELEASE) -->
     <section class="section">
-      <h2 class="section-title">INFORMATION</h2>
-      <div class="news-list">
-        <dl>
-          <dt>2026/10/1</dt>
-          <dd>TOPイラスト・サイトデザインリニューアル！</dd>
-        </dl>
+      <h2 class="section-title">NEW RELEASE</h2>
+      <div class="book-card highlight">
+        <div class="book-cover">
+          <img src="dojin/turi_top_1_s.jpg" alt="新刊表紙">
+          <span class="badge-new">NEW</span>
+        </div>
+        <div class="book-info">
+          <span class="book-category">漫画</span>
+          <h3 class="book-title">東京トップオブリリーランド１</h3>
+          <p class="book-meta">発行日：2026.9.22 / 漫画作品 / B5 / 28P / 表紙フルカラー</p>
+          <p class="book-description">
+            10年ぶりとなるプ〇キュア同人誌!<br>今回は、るるかとくれあの濃密な関係を描いた完全描き下ろし百合えっち漫画です!
+          </p>
+          <div class="shop-links">
+            <a href="https://t.co/fdZ0XSoqhy" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+            <a href="https://t.co/WfyLFqJbch" target="_blank" class="btn-shop melon"><i class="fa-solid fa-book"></i> メロンブックス</a>
+            <a href="https://t.co/0md3qEvljX" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-download"></i> FANZA</a>
+            <a href="https://t.co/QujFkW0VEi" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-download"></i> DLsite</a>
+            <a href="https://t.co/1sAv1hrHnT" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-download"></i> 🍈DL</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="book-card highlight">
+        <div class="book-cover">
+          <img src="dojin/Succubus_7.jpg" alt="新刊表紙">
+          <span class="badge-new">NEW</span>
+        </div>
+        <div class="book-info">
+          <span class="book-category">漫画</span>
+          <h3 class="book-title">東京サキュバス Episode 7</h3>
+          <p class="book-meta">発行日：2026.8.16 / 漫画作品 / B5 / 32P /  表紙フルカラー</p>
+          <p class="book-description">
+            ■異世界から召喚したサキュバスJK姉妹に理系男子が〇液搾り取られる話。第7弾！
+          </p>
+          <div class="shop-links">
+            <a href="https://metamorphose.booth.pm/items/8731580" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+            <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=3755060" target="_blank" class="btn-shop melon"><i class="fa-solid fa-book"></i> メロンブックス</a>
+            <a href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_803173/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-download"></i> FANZA</a>
+            <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01689180.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-download"></i> DLsite</a>
+            <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=3793048" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-download"></i> 🍈DL</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- 同人・ピックアップなど -->
+<!-- 既刊・過去作品（ジャンル別アコーディオン） -->
     <section class="section">
-      <h2 class="section-title">WORKS & DOJIN</h2>
-      <div class="card-grid">
-        <a href="dojin.html" class="card">
-          <div class="card-body">
-            <h3>同人誌・作品情報</h3>
-            <p>イベント参加情報やお品書き、既刊・新刊の一覧はこちら。</p>
+      <h2 class="section-title">BACK NUMBERS</h2>
+
+     <!-- ジャンル1: 近年作品（オリジナル / サキュバス / ツリ娘） -->
+      <details class="accordion-group" open>
+        <summary class="accordion-header">
+          <span><i class="fa-solid fa-folder-open"></i> オリジナル / サキュバス / ツリ娘 シリーズ（2022年〜）</span>
+          <i class="fa-solid fa-chevron-down icon-arrow"></i>
+        </summary>
+        <div class="book-grid accordion-content">
+
+                    <!-- 東京サキュバス6 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京サキュバス６"
+               data-meta="発行日：2025.12.31 / B5 / C107 / 表紙フルカラー"
+               data-img="dojin/Succubus_6.jpg"
+               data-desc="■異世界から召喚したサキュバスJK姉妹に理系男子が〇液搾り取られる話。第6弾！"
+               data-melon="https://melonbooks.co.jp/detail/detail.php?product_id=3407428"
+               data-booth="https://metamorphose.booth.pm/items/7882675"
+               data-dlsite="https://dlsite.com/maniax/work/=/product_id/RJ01531542.html"
+               data-fanza="https://dmm.co.jp/dc/doujin/-/detail/=/cid=d_714225/"
+               data-melondl="https://melonbooks.co.jp/detail/detail.php?product_id=3427713">
+            <div class="book-cover-mini"><img src="dojin/Succubus_6.jpg" alt="東京サキュバス6"></div>
+            <div class="book-info-mini">
+              <h4>東京サキュバス6</h4>
+              <p class="book-meta-mini">2025.12.31 / B5 / C107 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/7882675" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://melonbooks.co.jp/detail/detail.php?product_id=3407428" target="_blank" class="btn-shop melon"><i class="fa-solid fa-cart-shopping"></i> メロンブックス</a>
+                <a href="https://dmm.co.jp/dc/doujin/-/detail/=/cid=d_714225/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-cart-shopping"></i> FANZA</a>
+                <a href="https://dlsite.com/maniax/work/=/product_id/RJ01531542.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://melonbooks.co.jp/detail/detail.php?product_id=3427713" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
           </div>
-        </a>
-        <a href="https://metamorphose.amigasa.jp/gallery.html" class="card">
-          <div class="card-body">
-            <h3>ギャラリー</h3>
-            <p>過去に制作したイラスト作品のポートフォリオ。</p>
+
+                    <!-- 東京サキュバス5 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京サキュバス５"
+               data-meta="発行日：2025.8.17 / B5 / C106 / 表紙フルカラー"
+               data-img="dojin/Succubus_5.jpg"
+               data-desc="■異世界から召喚したサキュバスJK姉妹に理系男子が〇液搾り取られる話。第5弾！"
+               data-melon="https://www.melonbooks.co.jp/circle/index.php?circle_id=65414"
+               data-booth="https://metamorphose.booth.pm/items/6472601"
+               data-dlsite="https://www.dlsite.com/maniax/work/=/product_id/RJ01448180.html"
+               data-fanza="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_648654//"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=3174351">
+            <div class="book-cover-mini"><img src="dojin/Succubus_5.jpg" alt="東京サキュバス5"></div>
+            <div class="book-info-mini">
+              <h4>東京サキュバス5</h4>
+              <p class="book-meta-mini">2025.8.17 / B5 / C106 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/6472601" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.melonbooks.co.jp/circle/index.php?circle_id=65414" target="_blank" class="btn-shop melon"><i class="fa-solid fa-cart-shopping"></i> メロンブックス</a>
+                <a href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_648654/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-cart-shopping"></i> FANZA</a>
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01448180.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=3174351" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
           </div>
-        </a>
-        <a href="guideline.html" class="card">
-          <div class="card-body">
-            <h3>二次創作ガイドライン</h3>
-            <p>作品の取り扱いやご利用に関する規約。</p>
+
+                    <!-- 東京サキュバス4 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京サキュバス４"
+               data-meta="発行日：2024.12.30 / B5 / C105 / 表紙フルカラー"
+               data-img="dojin/Succubus_4.jpg"
+               data-desc="■異世界から召喚したサキュバスJK姉妹に理系男子が〇液搾り取られる話。第4弾！"
+               data-melon="https://www.melonbooks.co.jp/detail/detail.php?product_id=2687731"
+               data-booth="https://metamorphose.booth.pm/items/6472598"
+               data-dlsite="https://www.dlsite.com/maniax/work/=/product_id/RJ01314929.html"
+               data-fanza="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_499653/"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=2717496">
+            <div class="book-cover-mini"><img src="dojin/Succubus_4.jpg" alt="東京サキュバス4"></div>
+            <div class="book-info-mini">
+              <h4>東京サキュバス4</h4>
+              <p class="book-meta-mini">2024.12.30 / B5 / C105 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/6472598" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2687731" target="_blank" class="btn-shop melon"><i class="fa-solid fa-cart-shopping"></i> メロンブックス</a>
+                <a href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_499653/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-cart-shopping"></i> FANZA</a>
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01314929.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2717496" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
+
+                    <!-- 東京サキュバス3 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京サキュバス３"
+               data-meta="発行日：2024.8.12 / B5 / C104 / 表紙フルカラー"
+               data-img="dojin/Succubus_3.jpg"
+               data-desc="■異世界から召喚したサキュバスJK姉妹に理系男子が〇液搾り取られる話。第3弾！"
+               data-melon="https://www.melonbooks.co.jp/detail/detail.php?product_id=2511355"
+               data-booth="https://metamorphose.booth.pm/items/6472612"
+               data-dlsite="https://www.dlsite.com/maniax/announce/=/product_id/RJ01242063.html"
+               data-fanza="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_431599/"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=2516689">
+            <div class="book-cover-mini"><img src="dojin/Succubus_3.jpg" alt="東京サキュバス3"></div>
+            <div class="book-info-mini">
+              <h4>東京サキュバス2</h4>
+              <p class="book-meta-mini">2024.8.12 / B5 / C104 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/6472612" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2511355" target="_blank" class="btn-shop melon"><i class="fa-solid fa-cart-shopping"></i> メロンブックス</a>
+                <a href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_431599/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-cart-shopping"></i> FANZA</a>
+                <a href="https://www.dlsite.com/maniax/announce/=/product_id/RJ01242063.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2516689" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京サキュバス2 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京サキュバス２"
+               data-meta="発行日：2023.12.30 / B5 / 表紙フルカラー "
+               data-img="dojin/Succubus_2.jpg"
+               data-desc="■異世界から召喚したサキュバスJK姉妹に理系男子が〇液搾り取られる話。第2弾！"
+               data-melon="https://www.melonbooks.co.jp/detail/detail.php?product_id=2189405"
+               data-booth="https://metamorphose.booth.pm/items/317042"
+               data-dlsite="https://www.dlsite.com/maniax/work/=/product_id/RJ01136345.html"
+               data-fanza="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_287446/"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=2262365">
+            <div class="book-cover-mini"><img src="dojin/Succubus_2.jpg" alt="東京サキュバス2"></div>
+            <div class="book-info-mini">
+              <h4>東京サキュバス2</h4>
+              <p class="book-meta-mini">2023.12.30 / B5 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/317042" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2189405" target="_blank" class="btn-shop melon"><i class="fa-solid fa-cart-shopping"></i> メロンブックス</a>
+                <a href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_287446/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-cart-shopping"></i> FANZA</a>
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01136345.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2262365" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- GUY オリジナル作品集 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="GUY オリジナル作品集"
+               data-meta="発行日：2023.08.13 / C102 / 表紙フルカラー"
+               data-img="dojin/elf_1.jpg"
+               data-desc="GUYのオリジナルイラスト・作品を収録した一冊。"
+               data-melon="https://www.melonbooks.co.jp/detail/detail.php?product_id=2037180">
+            <div class="book-cover-mini"><img src="dojin/elf_1.jpg" alt="GUY オリジナル作品集"></div>
+            <div class="book-info-mini">
+              <h4>GUY オリジナル作品集</h4>
+              <p class="book-meta-mini">2023.08.13 / B5 / C102 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2037180" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京サキュバス -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京サキュバス"
+               data-meta="発行日：2023.08.13 / B5 / C102 / 表紙フルカラー"
+               data-img="dojin/Succubus_1.jpg"
+               data-desc="東京サキュバスシリーズ第1弾。"
+               data-melon="https://www.melonbooks.co.jp/detail/detail.php?product_id=2014995"
+               data-booth="https://metamorphose.booth.pm/items/404956"
+               data-dlsite="https://www.dlsite.com/maniax/work/=/product_id/RJ01085738.html"
+               data-fanza="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_287446/"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=2050133">
+            <div class="book-cover-mini"><img src="dojin/Succubus_1.jpg" alt="東京サキュバス"></div>
+            <div class="book-info-mini">
+              <h4>東京サキュバス</h4>
+              <p class="book-meta-mini">2023.08.13 / B5 / C102 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/404956" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2014995" target="_blank" class="btn-shop melon"><i class="fa-solid fa-cart-shopping"></i> メロンブックス</a>
+                <a href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_287446/" target="_blank" class="btn-shop FANZA"><i class="fa-solid fa-cart-shopping"></i> FANZA</a>
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01085738.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=2050133" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ娘 vol.2 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ娘 vol.2"
+               data-meta="発行日：2022.12.30 / C101 / 表紙フルカラー"
+               data-img="dojin/turimusume_2.jpg"
+               data-desc="ツリ娘の第2弾。"
+               data-booth="https://metamorphose.booth.pm/items/4440745"
+               data-dlsite="https://www.dlsite.com/maniax/work/=/product_id/RJ01011486.html"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=1790934">
+            <div class="book-cover-mini"><img src="dojin/turimusume_2.jpg" alt="ツリ娘 vol.2"></div>
+            <div class="book-info-mini">
+              <h4>ツリ娘 vol.2</h4>
+              <p class="book-meta-mini">2022.12.30 / C101 / 表紙フルカラー</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/4440745" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01011486.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1790934" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ娘 vol.1 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ娘 vol.1"
+               data-meta="発行日：2022.09.25 / B5"
+               data-img="dojin/turimusume_1.jpg"
+               data-desc="ツリ目キャラクターにスポットを当てたオリジナルイラスト集。"
+               data-booth="https://metamorphose.booth.pm/items/4203619"
+               data-dlsite="https://www.dlsite.com/maniax/work/=/product_id/RJ422224.html"
+               data-melondl="https://www.melonbooks.co.jp/detail/detail.php?product_id=1637789">
+            <div class="book-cover-mini"><img src="dojin/turimusume_1.jpg" alt="ツリ娘 vol.1"></div>
+            <div class="book-info-mini">
+              <h4>ツリ娘 vol.1</h4>
+              <p class="book-meta-mini">2022.09.25 / B5</p>
+              <div class="shop-links-mini">
+                <a href="https://metamorphose.booth.pm/items/4203619" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ422224.html" target="_blank" class="btn-shop DLsite"><i class="fa-solid fa-cart-shopping"></i> DLsite</a>
+                <a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1637789" target="_blank" class="btn-shop melonDL"><i class="fa-solid fa-cart-shopping"></i> 🍈DL</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+  <!-- ジャンル2: ツリ目道 シリーズ -->
+      <details class="accordion-group">
+        <summary class="accordion-header">
+          <span><i class="fa-solid fa-folder"></i> ツリ目道 シリーズ（2017〜2019年）</span>
+          <i class="fa-solid fa-chevron-down icon-arrow"></i>
+        </summary>
+        <div class="book-grid accordion-content">
+
+          <!-- ツリ目道8 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道8"
+               data-meta="発行日：2019.12.31 / B5 / C97"
+               data-img="dojin/turimedo_8.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第8弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_8.jpg" alt="ツリ目道8"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道8</h4>
+              <p class="book-meta-mini">2019.12.31 / C97</p>
+              <div class="shop-links-mini">
+                <a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01011486.html" target="_blank" class="btn-shop DLsit"><i class="fa-solid fa-cart-shopping"></i> DLsit</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop booth"><i class="fa-solid fa-cart-shopping"></i> BOOTH</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道 Beachwear illustration -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道 Beachwear illustration"
+               data-meta="発行日：2019.08.12 / B5 / C96"
+               data-img="dojin/turimedo_Beach.jpg"
+               data-desc="水着・ビーチウェアのツリ目イラストを中心とした特別号！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_Beach.jpg" alt="ツリ目道 Beachwear illustration"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道 Beachwear</h4>
+              <p class="book-meta-mini">2019.08.12 / C96</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道7 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道7"
+               data-meta="発行日：2019.04.29 / B5 / COMIC1☆15"
+               data-img="dojin/turimedo_7.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第7弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_7.jpg" alt="ツリ目道7"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道7</h4>
+              <p class="book-meta-mini">2019.04.29 / COMIC1☆15</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道6 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道6"
+               data-meta="発行日：2018.12.31 / B5 / C95"
+               data-img="dojin/turimedo_6.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第6弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_6.jpg" alt="ツリ目道6"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道6</h4>
+              <p class="book-meta-mini">2018.12.31 / C95</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道5 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道5"
+               data-meta="発行日：2018.08.12 / B5 / C94"
+               data-img="dojin/turimedo_5.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第5弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_5.jpg" alt="ツリ目道5"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道5</h4>
+              <p class="book-meta-mini">2018.08.12 / C94</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道総集編① -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道総集編①"
+               data-meta="発行日：2018.04.30 / B5 / COMIC1☆13"
+               data-img="dojin/turimedo_omu.jpg"
+               data-desc="『ツリ目道1〜4』の作品をまとめた総集編第1弾！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_omu.jpg" alt="ツリ目道総集編①"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道総集編①</h4>
+              <p class="book-meta-mini">2018.04.30 / COMIC1☆13</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道4 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道4"
+               data-meta="発行日：2018.04.30 / B5 / COMIC1☆13"
+               data-img="dojin/turimedo_4.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第4弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_4.jpg" alt="ツリ目道4"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道4</h4>
+              <p class="book-meta-mini">2018.04.30 / COMIC1☆13</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道3 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道3"
+               data-meta="発行日：2017.12.31 / B5 / C93"
+               data-img="dojin/turimedo_3.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第3弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_3.jpg" alt="ツリ目道3"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道3</h4>
+              <p class="book-meta-mini">2017.12.31 / C93</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道2 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道2"
+               data-meta="発行日：2017.08.13 / B5 / C92"
+               data-img="dojin/turimedo_2.jpg"
+               data-desc="「ツリ目」キャラクターに特化したイラスト集シリーズ第2弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_2.jpg" alt="ツリ目道2"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道2</h4>
+              <p class="book-meta-mini">2017.08.13 / C92</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ツリ目道 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="ツリ目道"
+               data-meta="発行日：2017.04.30 / B5 / COMIC1☆11"
+               data-img="dojin/turimedo_1.jpg"
+               data-desc="すべてはここから始まった！ツリ目道シリーズ記念すべき第1弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turimedo_1.jpg" alt="ツリ目道"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目道</h4>
+              <p class="book-meta-mini">2017.04.30 / COMIC1☆11</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+<!-- ジャンル3: 東京ツリ目ランド シリーズ -->
+      <details class="accordion-group">
+        <summary class="accordion-header">
+          <span><i class="fa-solid fa-folder"></i> 東京ツリ目ランド（プリキュア系）シリーズ（2008〜2016年）</span>
+          <i class="fa-solid fa-chevron-down icon-arrow"></i>
+        </summary>
+        <div class="book-grid accordion-content">
+
+          <!-- 東京ツリ目ランドFINAL -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランドFINAL"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2016.12.31 / B5 / C91"
+               data-img="dojin/turi_FINAL.jpg"
+               data-desc="プリキュア系パロディシリーズ「東京ツリ目ランド」堂々の完結編！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_FINAL.jpg" alt="東京ツリ目ランドFINAL"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランドFINAL</h4>
+              <p class="book-meta-mini">2016.12.31 / C91</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド22 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド22"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2016.08.14 / B5 / C90"
+               data-img="dojin/turi_22.jpg"
+               data-desc="魔法つかいプリキュア！を中心に描いたシリーズ第22弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_22.jpg" alt="東京ツリ目ランド22"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド22</h4>
+              <p class="book-meta-mini">2016.08.14 / C90</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド21 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド21"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2016.04.29 / B5"
+               data-img="dojin/turi_21.jpg"
+               data-desc="魔法つかいプリキュア！をテーマにした第21弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_21.jpg" alt="東京ツリ目ランド21"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド21</h4>
+              <p class="book-meta-mini">2016.04.29</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド　ドキプリのすべて -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド ドキプリのすべて"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2015.12.31 / B5 / C89"
+               data-img="dojin/turi_dokisube.jpg"
+               data-desc="ドキドキ！プリキュアを中心に全作品を凝縮した記念すべき第20弾！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_dokisube.jpg" alt="東京ツリ目ランド20"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド20</h4>
+              <p class="book-meta-mini">2015.12.31 / C89</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド20 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド20"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2015.12.31 / B5 / C89"
+               data-img="dojin/turi_20.jpg"
+               data-desc="Go!プリンセスプリキュア中心の第20弾！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_20.jpg" alt="東京ツリ目ランド20"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド20</h4>
+              <p class="book-meta-mini">2015.12.31 / C89</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド19 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド19"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2015.08.16 / B5 / C88"
+               data-img="dojin/turi_19.jpg"
+               data-desc="Go!プリンセスプリキュア中心の第19弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_19.jpg" alt="東京ツリ目ランド19"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド19</h4>
+              <p class="book-meta-mini">2015.08.16 / C88</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド18 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド18"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2015.05.02 / B5 / COMIC1☆9"
+               data-img="dojin/turi_18.jpg"
+               data-desc="Go!プリンセスプリキュアを中心とした第18弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_18.jpg" alt="東京ツリ目ランド18"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド18</h4>
+              <p class="book-meta-mini">2015.05.02 / COMIC1☆9</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド17 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド17"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2014.12.30 / B5 / C87"
+               data-img="dojin/turi_17.jpg"
+               data-desc="ハピネスチャージプリキュア！を中心に展開する第17弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_17.jpg" alt="東京ツリ目ランド17"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド17</h4>
+              <p class="book-meta-mini">2014.12.30 / C87</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド総集編 1・2・DXのすべて -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド総集編 1・2・DXのすべて"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2014.10.13 / B5"
+               data-img="dojin/turi_dxsube.jpg"
+               data-desc="初期ツリ目ランドの1・2およびDXシリーズを再構成した大ボリューム総集編！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_dxsube.jpg" alt="東京ツリ目ランド総集編 1・2・DXのすべて"></div>
+            <div class="book-info-mini">
+              <h4>ツリ目ランド総集編 DX</h4>
+              <p class="book-meta-mini">2014.10.13</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド16  -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド16"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2014.08.17 / B5 / C86"
+               data-img="dojin/turi_16.jpg"
+               data-desc="ハピネスチャージプリキュア！を中心に展開する第16弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_16.jpg" alt="東京ツリ目ランド16"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド16</h4>
+              <p class="book-meta-mini">2014.08.17 / C86</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド15 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド15"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2014.04.29 / B5"
+               data-img="dojin/turi_15.jpg"
+               data-desc="ハピネスチャージプリキュア！を描いた第15弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_15.jpg" alt="東京ツリ目ランド15"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド15</h4>
+              <p class="book-meta-mini">2014.04.29</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド スマプリのすべて -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド スマプリのすべて"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2013.12.31 / B5 / C85"
+               data-img="dojin/turi_sumasube.jpg"
+               data-desc="スマイルプリキュア！を中心に総まとめしたスペシャル本！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_sumasube.jpg" alt="東京ツリ目ランド14"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド14</h4>
+              <p class="book-meta-mini">2013.12.31 / C85</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+                    <!-- 東京ツリ目ランド14  -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド14 "
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2013.12.31 / B5 / C85"
+               data-img="dojin/turi_14.jpg"
+               data-desc="ドキドキ！プリキュアを中心に描いた第14弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_14.jpg" alt="東京ツリ目ランド14"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド14</h4>
+              <p class="book-meta-mini">2013.12.31 / C85</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド13 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド13"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2013.08.11 / B5 / C84"
+               data-img="dojin/turi_13.jpg"
+               data-desc="ドキドキ！プリキュアを中心に描いた第13弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_13.jpg" alt="東京ツリ目ランド13"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド13</h4>
+              <p class="book-meta-mini">2013.08.11 / C84</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド12 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド12"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2013.04.28 / B5"
+               data-img="dojin/turi_12.jpg"
+               data-desc="ドキドキ！プリキュア＆スマイルプリキュア！を中心にした第12弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_12.jpg" alt="東京ツリ目ランド12"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド12</h4>
+              <p class="book-meta-mini">2013.04.28</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド11 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド11"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2012.12.31 / B5 / C83"
+               data-img="dojin/turi_11.jpg"
+               data-desc="スマイルプリキュア！を中心に描いた第11弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_11.jpg" alt="東京ツリ目ランド11"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド11</h4>
+              <p class="book-meta-mini">2012.12.31 / C83</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド10 / スイプリのすべて -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド10 / スイプリのすべて"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2012.08.12 / B5 / C82"
+               data-img="dojin/turi_10.jpg"
+               data-desc="スマイルプリキュア♪を中心にまとめた記念すべき第10弾！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_10.jpg" alt="東京ツリ目ランド10"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド10</h4>
+              <p class="book-meta-mini">2012.08.12 / C82</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+<!-- 東京ツリ目ランド総集編 スイプリのすべて -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド総集編 スイプリのすべて"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2012.08.12 / B5 / 62P / C82"
+               data-img="dojin/turi_6.jpg"
+               data-desc="スイートプリキュア♪関連作品を一挙収録したスペシャル総集編！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_6.jpg" alt="東京ツリ目ランド総集編 スイプリのすべて"></div>
+            <div class="book-info-mini">
+              <h4>スイプリのすべて</h4>
+              <p class="book-meta-mini">2012.08.12 / C82</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド9 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド9"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2012.04.30 / B5 / 28P / COMIC1☆6"
+               data-img="dojin/turi_9.jpg"
+               data-desc="東京ツリ目ランドシリーズ第9弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_9.jpg" alt="東京ツリ目ランド9"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド9</h4>
+              <p class="book-meta-mini">2012.04.30 / COMIC1☆6</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド8 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド8"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2011.12.31 / B5 / 28P / C81"
+               data-img="dojin/turi_8.jpg"
+               data-desc="東京ツリ目ランドシリーズ第8弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_8.jpg" alt="東京ツリ目ランド8"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド8</h4>
+              <p class="book-meta-mini">2011.12.31 / C81</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド7 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド7"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2011.08.14 / B5 / 30P / C80"
+               data-img="dojin/turi_7.jpg"
+               data-desc="東京ツリ目ランドシリーズ第7弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_7.jpg" alt="東京ツリ目ランド7"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド7</h4>
+              <p class="book-meta-mini">2011.08.14 / C80</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド6 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド6"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2011.05.01 / B5 / 30P / COMIC1☆5"
+               data-img="dojin/turi_6.jpg"
+               data-desc="東京ツリ目ランドシリーズ第6弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_6.jpg" alt="東京ツリ目ランド6"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド6</h4>
+              <p class="book-meta-mini">2011.05.01 / COMIC1☆5</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド5+α -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド5+α"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2010.12.31 / B5 / 64P / C79"
+               data-img="dojin/turi_5.jpg"
+               data-desc="東京ツリ目ランド5にプラスαを加えた豪華64P仕様！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_5.jpg" alt="東京ツリ目ランド5+α"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド5+α</h4>
+              <p class="book-meta-mini">2010.12.31 / C79</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド4 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド4"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2010.08.15 / B5 / 28P / C78"
+               data-img="dojin/turi_4.jpg"
+               data-desc="東京ツリ目ランドシリーズ第4弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_4.jpg" alt="東京ツリ目ランド4"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド4</h4>
+              <p class="book-meta-mini">2010.08.15 / C78</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド3 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド3"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2010.04.29 / B5 / 30P / COMIC1☆4"
+               data-img="dojin/turi_3.jpg"
+               data-desc="東京ツリ目ランドシリーズ第3弾。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/turi_3.jpg" alt="東京ツリ目ランド3"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド3</h4>
+              <p class="book-meta-mini">2010.04.29 / COMIC1☆4</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランドDX -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランドDX"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2009.12.31 / B5 / 28P / C77"
+               data-img="dojin/purikyua_3.jpg"
+               data-desc="東京ツリ目ランドのスペシャルDX号！"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/purikyua_3.jpg" alt="東京ツリ目ランドDX"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランドDX</h4>
+              <p class="book-meta-mini">2009.12.31 / C77</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド2 -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド2"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2009.04.26 / B5 / 28P / COMIC1☆3"
+               data-img="dojin/fpc.jpg"
+               data-desc="フレッシュプリキュア! キュアピーチ、イース様本です。プリキュア達とコンタクトを取れるようになったイース、彼女達をFUKOにする為に今後の為に作戦を練り始めるが…。"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/fpc.jpg" alt="東京ツリ目ランド2"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド2</h4>
+              <p class="book-meta-mini">2009.04.26 / COMIC1☆3</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 東京ツリ目ランド -->
+          <div class="book-card-mini modal-trigger"
+               data-title="東京ツリ目ランド"
+               data-author='<span class="logo-sub">GUY / 中平凱 Official Site</span>'
+               data-meta="発行日：2008.04.27 / B5 / 28P / COMIC1☆2"
+               data-img="dojin/purikyua_1.jpg"
+               data-desc="ナッツハウスの為にプリキュア5達のグッズを出そうと言い出すのぞみ。文句を言うりんやかれん達だが、場の空気に流されるままに「決定！」されてしまう。果たして、グッズの売上は…？"
+               data-dlsite="https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG34746.html"
+               data-booth="https://metamorphose.booth.pm/">
+            <div class="book-cover-mini"><img src="dojin/purikyua_1.jpg" alt="東京ツリ目ランド"></div>
+            <div class="book-info-mini">
+              <h4>東京ツリ目ランド</h4>
+              <p class="book-meta-mini">2008.04.27 / COMIC1☆2</p>
+              <div class="shop-links-mini">
+                <a href="https://www.melonbooks.co.jp/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">メロン</a>
+                <a href="https://metamorphose.booth.pm/" target="_blank" class="btn-shop-sm" onclick="event.stopPropagation();">Booth</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+
+      <!-- ジャンル4: Fシリーズ -->
+      <details class="accordion-group">
+        <summary class="accordion-header">
+          <span><i class="fa-solid fa-folder"></i> F（藤子F系）シリーズ（1998〜2009年）</span>
+          <i class="fa-solid fa-chevron-down icon-arrow"></i>
+        </summary>
+        <div class="book-grid accordion-content">
+          <div class="book-card-mini"><div class="book-info-mini"><h4>Ｆ大百科Ω</h4><p class="book-meta-mini">2009.08.16 / 138P 総集編</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>Ｆ FINAL</h4><p class="book-meta-mini">2008.12.30 / C75</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>Ｆ大百科α</h4><p class="book-meta-mini">2008.08.17 / 144P 総集編</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>F16〜F10</h4><p class="book-meta-mini">2003〜2007年発行</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>F9〜F1 / 総集編 analog & digital</h4><p class="book-meta-mini">1998〜2003年発行初期F作品</p></div></div>
+        </div>
+      </details>
+
+      <!-- ジャンル5: その他のパロディ / 初期作品 -->
+      <details class="accordion-group">
+        <summary class="accordion-header">
+          <span><i class="fa-solid fa-folder"></i> 他パロディ・初期サークル作品（1997〜2013年）</span>
+          <i class="fa-solid fa-chevron-down icon-arrow"></i>
+        </summary>
+        <div class="book-grid accordion-content">
+          <div class="book-card-mini"><div class="book-info-mini"><h4>アスカのススメＱ (R18) / 準備号</h4><p class="book-meta-mini">2013.08.11 / エヴァ本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>最近どうよ？</h4><p class="book-meta-mini">2013.10.06 / 艦これコピー本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>アスカのススメ。</h4><p class="book-meta-mini">2009.12.31 / C77</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>キョン子の倦怠ライフは０よ！</h4><p class="book-meta-mini">2008.08.17 / ハルヒ本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>美希のユルユル日記</h4><p class="book-meta-mini">2007.04.22 / アイマス本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>華麗なる銀さまとゆかいな下僕ども zwei / 無印</h4><p class="book-meta-mini">2006年 / ローゼンメイデン本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>後輩ちゃんイジリ</h4><p class="book-meta-mini">2006.06.18 / ARIA本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>Delusion (R18)</h4><p class="book-meta-mini">2005.06.19 / ガンダムSEED本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>STAND / 『BK』</h4><p class="book-meta-mini">1999年 / スト ZERO3・オリジナル</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>裏ピカ○ュウの夏休み</h4><p class="book-meta-mini">1998年夏コミ突発本</p></div></div>
+          <div class="book-card-mini"><div class="book-info-mini"><h4>めたもるふぉーぜ 壱 / 弐</h4><p class="book-meta-mini">1997〜1998年 / サクラ大戦本</p></div></div>
+        </div>
+      </details>
+
     </section>
 
   </main>
@@ -155,4 +1154,132 @@
   </footer>
 
 </body>
+<!-- モーダル（ポップアップ）本体 -->
+<!-- モーダル（ポップアップ）本体 -->
+  <dialog id="book-modal" class="book-modal">
+    <div class="modal-content">
+      <!-- ★ ボタンを modal-content の直下に配置 -->
+      <button id="modal-prev" class="modal-nav-btn prev-btn" aria-label="前の作品へ">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="modal-next" class="modal-nav-btn next-btn" aria-label="次の作品へ">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <button id="modal-close" class="modal-close-btn">&times;</button>
+      <div class="modal-book-card">
+        <div class="modal-cover">
+          <img id="modal-img" src="" alt="">
+        </div>
+        <div class="modal-info">
+          <span class="book-category"></span>
+          <h3 id="modal-title" class="book-title"></h3>
+          <p id="modal-meta" class="book-meta"></p>
+          <p id="modal-desc" class="book-description"></p>
+          <div id="modal-shops" class="shop-links"></div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- モーダル動作用JavaScript -->
+<script>
+    const modal = document.getElementById('book-modal');
+    const closeBtn = document.getElementById('modal-close');
+    const prevBtn = document.getElementById('modal-prev');
+    const nextBtn = document.getElementById('modal-next');
+
+    let triggers = [];
+    let currentIndex = -1;
+
+    // モーダルに対象カードのデータをセットする関数
+    function updateModalContent(index) {
+      if (index < 0 || index >= triggers.length) return;
+      
+      currentIndex = index;
+      const card = triggers[currentIndex];
+
+      document.getElementById('modal-title').textContent = card.dataset.title || '';
+      document.getElementById('modal-meta').textContent = card.dataset.meta || '';
+      document.getElementById('modal-desc').textContent = card.dataset.desc || '';
+      document.getElementById('modal-img').src = card.dataset.img || '';
+
+      // 作者表示
+      const categoryElem = modal.querySelector('.book-category');
+      if (categoryElem) {
+        categoryElem.innerHTML = card.dataset.author || '<span class="logo-sub">GUY / 中平凱 Official Site</span>';
+      }
+
+      // 店舗リンクの更新
+      const shopContainer = document.getElementById('modal-shops');
+      shopContainer.innerHTML = '';
+      
+      const shops = [
+        { key: 'melon', name: 'メロンブックス' },
+        { key: 'fanza', name: 'FANZA(DL)' },
+        { key: 'dlsite', name: 'DLsite(DL)' },
+        { key: 'booth', name: 'Booth' },
+        { key: 'melondl', name: '🍈DL' },
+      ];
+
+      shops.forEach(shop => {
+        if (card.dataset[shop.key]) {
+          const a = document.createElement('a');
+          a.href = card.dataset[shop.key];
+          a.target = '_blank';
+          a.className = 'btn-shop';
+          a.textContent = shop.name;
+          shopContainer.appendChild(a);
+        }
+      });
+
+      // 最初の作品・最後の作品でボタンの有効/無効を切り替え
+      prevBtn.style.display = currentIndex > 0 ? 'flex' : 'none';
+      nextBtn.style.display = currentIndex < triggers.length - 1 ? 'flex' : 'none';
+    }
+
+    // イベント登録関数
+    function initModalTriggers() {
+      triggers = Array.from(document.querySelectorAll('.modal-trigger'));
+      
+      triggers.forEach((card, index) => {
+        card.addEventListener('click', () => {
+          updateModalContent(index);
+          modal.showModal();
+        });
+      });
+    }
+
+    // 初期化
+    initModalTriggers();
+
+    // 次へ・前へボタンのクリックイベント
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (currentIndex > 0) updateModalContent(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (currentIndex < triggers.length - 1) updateModalContent(currentIndex + 1);
+    });
+
+    // 閉じるボタン
+    closeBtn.addEventListener('click', () => modal.close());
+
+    // 背景クリックで閉じる
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+
+    // キーボードの左右キー操作対応
+    window.addEventListener('keydown', (e) => {
+      if (!modal.open) return;
+      if (e.key === 'ArrowLeft' && currentIndex > 0) {
+        updateModalContent(currentIndex - 1);
+      } else if (e.key === 'ArrowRight' && currentIndex < triggers.length - 1) {
+        updateModalContent(currentIndex + 1);
+      }
+    });
+  </script>
 </html>
