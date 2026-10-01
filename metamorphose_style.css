@@ -1446,10 +1446,10 @@ details[open] .icon-arrow {
 }
 
 /* ==========================================
-   iPad / iOS <dialog> 表示不具合対策
+   iPad対策 ＆ ポップアップサイズ・ボタン位置固定化
    ========================================== */
 
-/* モーダル本体の位置と重なり順を明示的に固定 */
+/* モーダル背景（画面全体に固定） */
 .book-modal[open] {
   display: flex !important;
   align-items: center;
@@ -1465,21 +1465,72 @@ details[open] .icon-arrow {
   padding: 0 !important;
   border: none !important;
   background: transparent !important;
-  z-index: 99999 !important; /* 背景より確実に手前に持ってくる */
+  z-index: 99999 !important;
 }
 
-/* ポップアップ中身のカード */
+/* モーダルコンテンツ外枠（横幅を固定してボタン位置のずれを防止） */
 .book-modal .modal-content {
   position: relative !important;
-  z-index: 100000 !important; /* バックドロップより確実に上へ */
-  max-height: 90vh;
+  z-index: 100000 !important;
+  width: 90vw !important;          /* 画面幅の90%に固定 */
+  max-width: 750px !important;     /* PC/タブレット時の最大横幅を固定 */
+  max-height: 85vh;
+  background: #181b22;
+  border: 1px solid #2e3548;
+  border-radius: 12px;
+  padding: 2rem;
+  box-sizing: border-box;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* iPadでのスクロールを滑らかに */
+  -webkit-overflow-scrolling: touch; /* iPad滑らかスクロール */
 }
 
-/* 暗転背景（::backdrop）の設定 */
+/* 左右ナビゲーションボタンの位置固定 */
+.modal-nav-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 100001 !important;
+  width: 44px;
+  height: 44px;
+  background: rgba(30, 35, 48, 0.9);
+  border: 1px solid #3b4257;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* ボタンの位置（modal-contentの左右内側に固定） */
+.modal-nav-btn.prev-btn {
+  left: 10px !important;
+}
+
+.modal-nav-btn.next-btn {
+  right: 10px !important;
+}
+
+/* スマホ表示（画面幅が狭い場合）のレイアウト調整 */
+@media (max-width: 680px) {
+  .book-modal .modal-content {
+    width: 95vw !important;
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .modal-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .modal-nav-btn.prev-btn { left: 5px !important; }
+  .modal-nav-btn.next-btn { right: 5px !important; }
+}
+
+/* 暗転背景（::backdrop） */
 .book-modal::backdrop {
   background: rgba(0, 0, 0, 0.75) !important;
   backdrop-filter: blur(4px);
-  z-index: 99998 !important;
 }
