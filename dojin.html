@@ -1179,11 +1179,6 @@
         </div>
       </div>
 
-      <!-- ★ モーダル内部に画像拡大用オーバーレイを配置（これで裏に回り込むのを完全に防止） -->
-      <div id="modal-image-overlay" class="image-expand-overlay">
-        <img id="modal-expanded-img" src="" alt="拡大画像">
-        <button id="expand-close-btn" class="expand-close-btn">&times;</button>
-      </div>
     </div>
   </dialog>
 
@@ -1349,7 +1344,6 @@
       if (e.target.matches('.book-card.highlight .book-cover img, .modal-cover img')) {
         e.stopPropagation();
         
-        // モーダル内の画像が押された場合、カード全体の表示を画像フィットに切替
         if (modalContent) {
           modalContent.classList.toggle('zoomed');
         }
@@ -1363,7 +1357,6 @@
       }
     }
 
-    // closeModal や updateModalContent 内で resetZoom() を呼び出すように既存処理を補合
     const originalCloseModal = closeModal;
     closeModal = function() {
       resetZoom();
