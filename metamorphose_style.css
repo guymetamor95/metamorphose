@@ -1534,3 +1534,12 @@ details[open] .icon-arrow {
   background: rgba(0, 0, 0, 0.75) !important;
   backdrop-filter: blur(4px);
 }
+
+/* モーダル画像でピンチイン/ピンチアウト操作を許可 */
+.modal-cover img {
+  touch-action: pan-x pan-y pinch-zoom !important;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
