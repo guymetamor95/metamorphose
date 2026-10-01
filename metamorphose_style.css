@@ -1438,3 +1438,9 @@ details[open] .icon-arrow {
 .modal-content:focus {
   outline: none;
 }
+
+/* iPadでのタップ反応を確実にする指定 */
+.modal-trigger {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1238,14 +1238,23 @@
       nextBtn.style.display = currentIndex < triggers.length - 1 ? 'flex' : 'none';
     }
 
-    // イベント登録関数
+// イベント登録関数
     function initModalTriggers() {
       triggers = Array.from(document.querySelectorAll('.modal-trigger'));
       
       triggers.forEach((card, index) => {
-        card.addEventListener('click', () => {
+        // iPad / スマホ向けに click イベントを確実に届かせる
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
           updateModalContent(index);
-          modal.showModal();
+
+          // iPadOS対策: showModal がサポートされているか確認して呼び出し
+          if (typeof modal.showModal === "function") {
+            modal.showModal();
+          } else {
+            // 万が一古いiOSで showModal が効かない場合のフォールバック
+            modal.setAttribute('open', 'true');
+          }
         });
       });
     }
