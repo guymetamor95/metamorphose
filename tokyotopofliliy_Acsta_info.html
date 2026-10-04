@@ -75,19 +75,50 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+                /* フッター */
+        .footer {
+        text-align: center;
+        padding: 2rem;
+        border-top: 1px solid var(--border-color);
+        font-size: 0.8rem;
+        color: var(--text-sub);
+        }
     </style>
 </head>
 <body class="font-sans antialiased text-brand-darkText pb-24">
 
-    <header class="sticky top-0 z-40 w-full glass-card border-b border-pink-100">
-        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <span class="w-3 h-3 rounded-full bg-pink-400 animate-ping"></span>
-                <span class="font-bold text-lg text-gradient tracking-wide">Metamorphose Information</span>
-            </div>
-            <a href="https://metamorphose.booth.pm/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-4 py-2 rounded-full bg-pink-500 text-white shadow-sm hover:bg-pink-600 transition flex items-center gap-1.5">
-                <i class="fa-solid fa-store"></i> BOOTHで見る
+<!-- Header (Metamorphose 本サイト仕様＋LPナビゲーション) -->
+    <header class="sticky top-0 z-40 w-full glass-card border-b border-pink-100/60 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+            
+            <!-- ブランドロゴ（本サイトの表記ルールを継承） -->
+            <a href="https://guymetamor95.github.io/metamorphose/index.html" class="flex flex-col group transition" title="Metamorphose TOPへ">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-pink-500 animate-pulse"></span>
+                    <span class="font-bold text-lg md:text-xl text-gradient tracking-wide font-outfit">Metamorphose Information</span>
+                </div>
+                <span class="text-[10px] text-slate-500 font-medium tracking-wider pl-4 -mt-1 group-hover:text-pink-500 transition">
+                    GUY / 中平凱 Official Site
+                </span>
             </a>
+
+            <!-- 右側ナビゲーション＆アクションボタン -->
+            <div class="flex items-center gap-2 md:gap-3">
+                <!-- 本サイトへの戻りリンク -->
+                <a href="https://guymetamor95.github.io/metamorphose/index.html" 
+                   class="text-xs font-bold px-3 py-1.5 rounded-full text-slate-600 hover:text-pink-600 hover:bg-pink-50/80 transition flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                    <span class="hidden sm:inline">Metamorphose</span> TOP
+                </a>
+
+                <!-- BOOTH予約ボタン（目立たせるメインCTA） -->
+                <a href="https://metamorphose.booth.pm/" target="_blank" rel="noopener noreferrer" 
+                   class="text-xs font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-sm hover:shadow-pink-300/50 hover:scale-105 active:scale-95 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-store"></i> 
+                    <span>BOOTH<span class="hidden sm:inline">で見る</span></span>
+                </a>
+            </div>
+
         </div>
     </header>
 
@@ -192,7 +223,7 @@
                     </h1>
 
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        イベントでの人気アクスタ『るるか＆くれあ』受注予約のお知らせです！期間中にご予約いただいた方は<strong>確実にお手元に届きます！</strong>
+                        イベントで人気のアクスタ『るるか＆くれあ』受注予約のお知らせです！期間限定で受注生産のご予約を受け付けます。お時間を少々頂きますが、ご予約いただいた方は<strong>確実にお手元に届きます！</strong>
                     </p>
 
                     <!-- Price Display -->
@@ -263,7 +294,7 @@
                 <dl class="space-y-3 text-sm">
                     <div class="flex justify-between pb-2 border-b border-slate-100">
                         <dt class="text-slate-500 font-medium">受付期間</dt>
-                        <dd class="font-bold text-slate-700 text-right">10月5日(日) 12:00 〜<br>10月13日(日) 23:59 まで</dd>
+                        <dd class="font-bold text-slate-700 text-right">10月4日(日) 12:00 〜<br>10月12日(月) 23:59 まで</dd>
                     </div>
                     <div class="flex justify-between pb-2 border-b border-slate-100">
                         <dt class="text-slate-500 font-medium">価格</dt>
@@ -275,7 +306,7 @@
                     </div>
                     <div class="flex justify-between pb-2 border-b border-slate-100">
                         <dt class="text-slate-500 font-medium">発送予定時期</dt>
-                        <dd class="font-bold text-purple-700 text-right">11月中旬〜下旬頃<br><span class="text-xs font-normal text-slate-500">(締切より約1.5ヶ月後)</span></dd>
+                        <dd class="font-bold text-purple-700 text-right">11月中旬〜下旬頃<br><span class="text-xs font-normal text-slate-500">(締切より約1ヶ月前後)</span></dd>
                     </div>
                     <div class="flex justify-between">
                         <dt class="text-slate-500 font-medium">発送方法</dt>
@@ -284,32 +315,33 @@
                 </dl>
             </div>
 
-            <!-- Important Notices Box -->
-            <div class="glass-card rounded-3xl p-6 space-y-4 border-l-4 border-l-pink-500">
-                <h2 class="text-lg font-bold flex items-center text-slate-800 border-b border-pink-100 pb-3">
-                    <i class="fa-solid fa-circle-exclamation text-pink-500 mr-2"></i> ご注文時の注意事項
-                </h2>
-                <ul class="space-y-3 text-xs text-slate-600 leading-relaxed">
-                    <li class="flex items-start">
-                        <i class="fa-solid fa-check text-pink-500 mt-0.5 mr-2 shrink-0"></i>
-                        <span><strong>完全受注生産</strong>のため、締め切りから お届けまで約1.5ヶ月程度のお時間をいただきます。あらかじめご了承ください。</span>
-                    </li>
-                    <li class="flex items-start bg-pink-50/80 p-2.5 rounded-xl border border-pink-100 text-pink-900 font-medium">
-                        <i class="fa-solid fa-triangle-exclamation text-pink-500 mt-0.5 mr-2 shrink-0"></i>
-                        <span>製造の都合上、ご注文の合計が<strong>【10個】</strong>に満たない場合は、やむを得ず製造中止・キャンセル（全額ご返金）とさせていただく場合がございます。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa-solid fa-check text-pink-500 mt-0.5 mr-2 shrink-0"></i>
-                        <span>他の発送目安が異なる商品と同時に購入された場合、一番遅い商品の発送予定日に合わせてまとめて届きます。</span>
-                    </li>
-                </ul>
-            </div>
+    <!-- Important Notices Box -->
+    <div class="glass-card rounded-3xl p-6 space-y-4 border-l-4 border-l-pink-500">
+        <h2 class="text-lg font-bold flex items-center text-slate-800 border-b border-pink-100 pb-3">
+            <i class="fa-solid fa-circle-exclamation text-pink-500 mr-2"></i> ご注文時の注意事項
+        </h2>
+        <ul class="space-y-3 text-xs text-slate-600 leading-relaxed">
+            <li class="flex items-start">
+                <i class="fa-solid fa-check text-pink-500 mt-0.5 mr-2 shrink-0"></i>
+                <span><strong>完全受注生産</strong>のため、お届けまで約1ヶ月程度のお時間をいただきます。あらかじめご了承ください。</span>
+            </li>
+            <li class="flex items-start bg-pink-50/80 p-2.5 rounded-xl border border-pink-100 text-pink-900 font-medium">
+                <i class="fa-solid fa-triangle-exclamation text-pink-500 mt-0.5 mr-2 shrink-0"></i>
+                <span>製造の都合上、ご注文の合計が<strong>【10個】</strong>に満たない場合は、やむを得ず製造中止・キャンセル（全額ご返金）とさせていただく場合がございます。</span>
+            </li>
+            <!-- ★ここを単品発送明記に変更 -->
+            <li class="flex items-start">
+                <i class="fa-solid fa-check text-pink-500 mt-0.5 mr-2 shrink-0"></i>
+                <span>本商品はBOOTH倉庫からの<strong>単体発送</strong>となります（他の商品との同梱発送はできません）。※当アクスタを複数個まとめてご注文された場合は同梱でお届けとなります。</span>
+            </li>
+        </ul>
+    </div>
         </section>
 
 <!-- Action Buttons -->
 <div class="pt-2">
     <!-- <a> タグ自体をボタン風のデザインにします -->
-    <a href="https://metamorphose.booth.pm/" target="_blank" rel="noopener noreferrer" 
+    <a href="https://metamorphose.booth.pm/items/8907588" target="_blank" rel="noopener noreferrer" 
        class="w-full py-4 rounded-2xl shimmer-btn text-white font-extrabold text-2xl shadow-lg hover:shadow-pink-300/50 transition duration-300 flex items-center justify-center gap-2">
         <i class="fa-solid fa-cart-shopping"></i> BOOTH予約ページへ移動する (外部サイト)
     </a>
@@ -347,7 +379,7 @@
 function startCountdown() {
     // ★ここにご希望の受注締め切り日時を設定してください
     // 書式: "YYYY-MM-DDTHH:mm:ss" （例: "2026-10-25T23:59:59"）
-    const targetDate = new Date("2026-10-13T23:59:59").getTime();
+    const targetDate = new Date("2026-10-12T23:59:59").getTime();
 
     function updateTimer() {
         const now = new Date().getTime();
@@ -406,7 +438,7 @@ function startCountdown() {
 
         // Copy BOOTH Description to Clipboard
         function copyBoothMarkdown() {
-            const markdownText = `✨【受注生産】『るるか＆くれあ』アクリルスタンド（予約受付）✨\n\nイベントで即完売となった『るるか＆くれあ』の大判アクリルスタンドです！\n買い逃してしまった方向けに、期間限定で受注生産のご予約を受け付けます。\n受注生産のため、期間内にお申し込みいただければ確実にお手元に届きます。\n\n--------------------------------------------------\n\n【受付期間】\n◯月◯日(日) 21:00 〜 ◯月◯日(日) 23:59 まで\n\n【商品詳細】\n・価格：2,000円（税込・送料別）\n・サイズ：約100mm × 150mm\n・仕様：透明アクリル / フルカラー印刷\n\n【お届けについて】\n・発送予定時期：◯月上旬〜中旬頃予定（受付終了より約1.5ヶ月後）\n・発送方法：BOOTH倉庫より順次発送（あんしんBOOTHパック）\n\n--------------------------------------------------\n\n【ご注文時の注意事項】\n※完全受注生産のため、お届けまでにお時間をいただきます。あらかじめご了承の上ご注文ください。\n※製造の都合上、ご注文の合計数が【20個】に満たない場合は、やむを得ず製造中止・キャンセル（全額ご返金）とさせていただく場合がございます。`;
+            const markdownText = `✨【受注生産】『るるか＆くれあ』アクリルスタンド（予約受付）✨\n\nイベントで即完売となった『るるか＆くれあ』の大判アクリルスタンドです！\n買い逃してしまった方向けに、期間限定で受注生産のご予約を受け付けます。\n受注生産のため、期間内にお申し込みいただければ確実にお手元に届きます。\n\n--------------------------------------------------\n\n【受付期間】\n◯月◯日(日) 21:00 〜 ◯月◯日(日) 23:59 まで\n\n【商品詳細】\n・価格：2,000円（税込・送料別）\n・サイズ：約100mm × 150mm\n・仕様：透明アクリル / フルカラー印刷\n\n【お届けについて】\n・発送予定時期：◯月上旬〜中旬頃予定（受付終了より約1ヶ月前後）\n・発送方法：BOOTH倉庫より順次発送（あんしんBOOTHパック）\n\n--------------------------------------------------\n\n【ご注文時の注意事項】\n※完全受注生産のため、お届けまでにお時間をいただきます。あらかじめご了承の上ご注文ください。\n※製造の都合上、ご注文の合計数が【20個】に満たない場合は、やむを得ず製造中止・キャンセル（全額ご返金）とさせていただく場合がございます。`;
 
             // Using document.execCommand for cross-origin compatibility
             const textarea = document.createElement('textarea');
@@ -434,6 +466,8 @@ function startCountdown() {
         window.onload = function() {
             startCountdown();
         }
+
+        
     </script>
 
 <script>
@@ -523,5 +557,11 @@ function startCountdown() {
         initDots();
     });
 </script>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy; Metamorphose / GUY &amp; 中平凱 All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
